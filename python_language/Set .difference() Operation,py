@@ -1,0 +1,8 @@
+lang = []
+for i in range(2):
+    input()
+    lang.append(set(map(int, input().split())))
+
+newSet = lang[0].difference(lang[1])
+print(len(newSet))
+  
