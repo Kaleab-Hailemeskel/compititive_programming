@@ -1,8 +1,5 @@
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
         count = [0, 0, 0]
         n = len(nums)
         for i in range(n):
