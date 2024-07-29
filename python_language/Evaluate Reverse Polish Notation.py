@@ -1,6 +1,6 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        ope = {"*":'*', "/":"/", "+":"+", "-":"-"}    
+        ope = set(["*", "/", "+", "-"])  
         num = []
         for val in tokens:
             if val in ope:
