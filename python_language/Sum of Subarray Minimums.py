@@ -8,7 +8,7 @@ class Solution:
         pre_arr = [0]  * n
         
         for i in range(n):
-            while nxt_queue and arr[nxt_queue[-1]] > arr[i]:
+            while nxt_queue and arr[nxt_queue[-1]] > arr[i]: # >= is a must between line 11 or line 19, but not on both
                 nxt_arr[nxt_queue[-1]] = i - nxt_queue[-1]
                 nxt_queue.pop()
             nxt_queue.append(i)
